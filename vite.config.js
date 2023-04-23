@@ -13,6 +13,11 @@ export default {
     {
         outDir: '../dist',
         emptyOutDir: true,
-        sourcemap: true
+        sourcemap: true,
+        rollupOptions: {
+            external: [
+              "three/examples/jsm/loaders/Fontloader.js",
+            ],
+          },
     }
 }
